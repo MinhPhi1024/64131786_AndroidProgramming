@@ -63,17 +63,61 @@
     </LinearLayout>
     //nút bấm
     <LinearLayout
-        android:layout_width="340dp"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:background="#0A8746">
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:id="@+id/btnCong"
+            android:onClick="XuLyCong"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_gravity="center"
+            android:backgroundTint="#EFB455"
+            android:textColor="#FFFFFF"
             android:text="+"
-            android:textSize="30dp"
+            android:textSize="30dp">
+
+        </Button>
+        <Button
+            android:id="@+id/btnTru"
+            android:onClick="XuLyTru"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#EFB455"
+            android:textColor="#FFFFFF"
+            android:text="+"
+            android:textSize="30dp">
+        </Button>
+        <Button
+            android:id="@+id/btnCong"
+            android:onClick="XuLyCong"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#EFB455"
+            android:textColor="#FFFFFF"
+            android:text="+"
+            android:textSize="30dp">
+        </Button>
+        <Button
+            android:id="@+id/btnCong"
+            android:onClick="XuLyCong"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#EFB455"
+            android:textColor="#FFFFFF"
+            android:text="+"
+            android:textSize="30dp">
+        </Button>
 
     </LinearLayout>
 
