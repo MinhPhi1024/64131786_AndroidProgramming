@@ -6,4 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" />
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@color/cardview_dark_background">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Nhập cạnh a:"
+            android:textSize="20dp"
+            android:textColor="#fffd77"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+    </LinearLayout>
+</LinearLayout>
