@@ -74,7 +74,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edtA" />
 
     <EditText
-        android:id="@+id/edtB3"
+        android:id="@+id/edtKQ"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
@@ -94,6 +94,7 @@
         android:layout_marginTop="36dp"
         android:layout_marginEnd="155dp"
         android:backgroundTint="#B32424"
+        android:onClick="XuLyCong"
         android:text="Tổng"
         android:textSize="24sp"
         android:textStyle="bold"
