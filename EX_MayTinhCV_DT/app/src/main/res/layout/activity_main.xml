@@ -6,20 +6,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#fff7"
     tools:context=".MainActivity">
-    <LinearLayout
-        android:layout_width="340dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:background="@color/cardview_dark_background">
-        <TextView
+    <RadioGroup
+        android:id="@+id/raG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rbHinhTron"
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:text="Nhập cạnh a:"
-            android:textSize="20dp"
-            android:textColor="#fffd77"
-            android:layout_marginTop="10dp">
+            android:layout_height="25dp"
+            android:text="Hình tròn"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rbHinhVuong"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Hình vuông"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rbHinhChuNhat"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Hình Hinh Chữ Nhật"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:checked="true"/>
+    </RadioGroup>
+    <EditText
+        android:id="@+id/edtHT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
 
-        </TextView>
-    </LinearLayout>
+
 </LinearLayout>
