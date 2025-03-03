@@ -8,7 +8,6 @@
     android:orientation="vertical"
     android:background="#0A8746"
     tools:context=".MainActivity">
-   //số thứ 1
     <LinearLayout
         android:layout_width="340dp"
         android:padding="5dp"
@@ -35,7 +34,6 @@
             android:textSize="19dp"
             android:textStyle="bold" />
     </LinearLayout>
-    //số thứ 2
     <LinearLayout
         android:layout_width="340dp"
         android:padding="5dp"
@@ -62,7 +60,7 @@
             android:textSize="19dp"
             android:textStyle="bold" />
     </LinearLayout>
-    //nút bấm
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -130,7 +128,7 @@
             android:textSize="30dp">
         </Button>
     </LinearLayout>
-    //hiện thị kết quả
+
     <LinearLayout
         android:layout_width="340dp"
         android:layout_height="70dp"
@@ -154,7 +152,8 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textSize="19dp"
-            android:textStyle="bold"
+            android:textStyle="bold">
+        </EditText>
     </LinearLayout>
 
 </LinearLayout>
