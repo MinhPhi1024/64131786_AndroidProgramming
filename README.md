@@ -2,6 +2,6 @@
 
 Dưới đây là hình ảnh minh họa:
 
-![Ứng dụng tính toán cơ bản](D:\NTU\JAVA_TBDD\64131786_AndroidProgramming\Pic\Ex4_AddSubMulDiv_Onclick.png)
+![Ứng dụng tính toán cơ bản](https://github.com/MinhPhi1024/64131786_AndroidProgramming/blob/main/Pic/Ex4_AddSubMulDiv_Onclick.png)
 
 
