@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         EditText edtA = findViewById(R.id.edtA);
         EditText edtB = findViewById(R.id.edtB);
         EditText edtKQ = findViewById(R.id.edtKQ);
-        
+
         //lấy dữ liệu về
         String strA = edtA.getText().toString();
         String strB = edtB.getText().toString();
