@@ -24,6 +24,28 @@ public class MainActivity extends AppCompatActivity {
         EditText edtA = findViewById(R.id.edtA);
         EditText edtB = findViewById(R.id.edtB);
         EditText edtKQ = findViewById(R.id.edtKQ);
+        
+        //lấy dữ liệu về
+        String strA = edtA.getText().toString();
+        String strB = edtB.getText().toString();
+
+        //chuyển dữ liệu sang dữ liệu số
+        int a = Integer.parseInt(strA);
+        int b = Integer.parseInt(strB);
+
+        //Tính tổng theo yêu cầu
+        int tong = a + b;
+
+        //chuyển tổng sang chuỗi
+        String strKQ = String.valueOf(tong);
+
+        //Hiển thị kết quả
+        edtKQ.setText(String.valueOf(strKQ));
+
+
+
+
+
 
 
 
