@@ -11,7 +11,7 @@
     <RadioGroup
         android:id="@+id/raG"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="80dp"
         android:orientation="horizontal">
         <RadioButton
             android:id="@+id/rbHinhTron"
@@ -38,11 +38,27 @@
             android:layout_marginLeft="15dp"
             android:checked="true"/>
     </RadioGroup>
-    <EditText
-        android:id="@+id/edtHT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:layout_marginTop=""
+        android:layout_marginLeft="35dp"
+        android:background="#4DD0E1">
+        <EditText
+            android:id="@+id/edtHT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập chiều dài"
+            android:layout_marginTop="-600dp"
+            android:layout_marginBottom="50dp"
+            android:textColor="@color/black">
+        </EditText>
+
+    </LinearLayout>
+
+
+
 
 
 </LinearLayout>
