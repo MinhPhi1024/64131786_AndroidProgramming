@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#CCC8C5"
     tools:context=".MainActivity">
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,7 +29,7 @@
         android:layout_height="70dp"
         android:background="#CCC8C5"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp">
+        android:layout_marginTop="120dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="30dp"
@@ -44,7 +45,9 @@
             android:layout_width="200dp"
             android:layout_height="40dp"
             android:layout_marginTop="12dp"
-            android:hint="     Nhập 1 số nguyên"
+            android:hint="Nhập 1 số nguyên"
+            android:textColorHint="@color/black"
+            android:gravity="center"
             android:textColor="@color/black"
             android:textStyle="bold">
         </EditText>
@@ -70,25 +73,108 @@
             android:layout_width="200dp"
             android:layout_height="40dp"
             android:layout_marginTop="12dp"
-            android:hint="     Nhập 1 số nguyên"
+            android:hint="Nhập 1 số nguyên"
+            android:textColorHint="@color/black"
             android:textColor="@color/black"
+            android:gravity="center"
             android:textStyle="bold">
         </EditText>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="#CCC8C5"
-        android:layout_gravity="center"
+        android:layout_height="100dp"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center"
+        android:background="#CCC8C5">
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
+            android:id="@+id/btnCong"
+            android:onClick="XuLyCong"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#EFB455"
+            android:textColor="#FFFFFF"
             android:text="+"
             android:textStyle="bold"
-            android:textSize="30dp"
-            android:backgroundTint="#3BA215"
+            android:textSize="30dp">
+
+        </Button>
+        <Button
+            android:id="@+id/btnTru"
+            android:onClick="XuLyTru"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#EFB455"
+            android:textColor="#FFFFFF"
+            android:text="-"
+            android:textStyle="bold"
+            android:textSize="40dp">
+        </Button>
+        <Button
+            android:id="@+id/btnNhan"
+            android:onClick="XuLyNhan"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#EFB455"
+            android:textColor="#FFFFFF"
+            android:text="x"
+            android:textStyle="bold"
+            android:textSize="30dp">
+        </Button>
+        <Button
+            android:id="@+id/btnChia"
+            android:onClick="XuLyChia"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#EFB455"
+            android:textColor="#FFFFFF"
+            android:text="/"
+            android:textStyle="bold"
+            android:textSize="30dp">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="#CCC8C5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kết quả:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <EditText
+            android:id="@+id/edtKQ"
+            android:layout_width="200dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Kết quả phép tính"
+            android:textColorHint="@color/black"
+            android:textSize="19dp"
+            android:textStyle="bold">
+        </EditText>
     </LinearLayout>
 
 
