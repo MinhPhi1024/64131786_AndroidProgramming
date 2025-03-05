@@ -8,10 +8,28 @@
     android:orientation="vertical"
     android:background="#fff7"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#4DD0E1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:text="TÍNH CHU VI - DIỆN TÍCH">
+        </TextView>
+    </LinearLayout>
+
     <RadioGroup
         android:id="@+id/raG"
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal">
         <RadioButton
             android:id="@+id/rbHinhTron"
@@ -39,23 +57,35 @@
             android:checked="true"/>
     </RadioGroup>
     <LinearLayout
-        android:layout_width="340dp"
-        android:layout_height="70dp"
-        android:orientation="vertical"
-        android:layout_marginTop=""
-        android:layout_marginLeft="35dp"
-        android:background="#4DD0E1">
-        <EditText
-            android:id="@+id/edtHT"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:background="#4FC3F7"
+        android:layout_marginLeft="20dp">
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nhập chiều dài"
-            android:layout_marginTop="-600dp"
-            android:layout_marginBottom="50dp"
-            android:textColor="@color/black">
-        </EditText>
+            android:text="Nhập chiều dài:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp">
+        </TextView>
+        <EditText
+            android:id="@+id/edtChieuDai"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:hint="Nhập chiều dài"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:textColorHint="@color/black"
+
+
 
     </LinearLayout>
+
 
 
 
