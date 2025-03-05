@@ -115,27 +115,33 @@
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:layout_marginStart="19dp"
+        android:layout_marginTop="31dp"
         android:layout_marginEnd="30dp"
+        android:layout_marginBottom="42dp"
         android:backgroundTint="#137A17"
         android:text="-"
         android:textSize="20dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtKQ"
         app:layout_constraintEnd_toStartOf="@+id/btnNhan"
         app:layout_constraintStart_toEndOf="@+id/btnCong"
-        tools:layout_editor_absoluteY="305dp" />
+        app:layout_constraintTop_toBottomOf="@+id/edt2" />
 
     <Button
         android:id="@+id/btnNhan"
         android:layout_width="70dp"
         android:layout_height="50dp"
+        android:layout_marginTop="31dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="42dp"
         android:backgroundTint="#137A17"
         android:text="*"
         android:textSize="20dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtKQ"
         app:layout_constraintEnd_toStartOf="@+id/btnChia"
         app:layout_constraintStart_toEndOf="@+id/btnTru"
-        tools:layout_editor_absoluteY="305dp" />
+        app:layout_constraintTop_toBottomOf="@+id/edt2" />
 
     <Button
         android:id="@+id/btnChia"
