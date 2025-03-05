@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:background="#65ED2C"
         android:layout_gravity="center">
         <TextView
@@ -17,10 +17,10 @@
             android:layout_height="wrap_content"
             android:text="MÁY TÍNH CƠ BẢN"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="30dp"
             android:layout_gravity="center"
             android:textStyle="bold"
-            android:layout_marginLeft="110dp">
+            android:layout_marginLeft="80dp">
         </TextView>
     </LinearLayout>
     <LinearLayout
@@ -28,13 +28,14 @@
         android:layout_height="70dp"
         android:background="#CCC8C5"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="100dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:text="Số thứ nhất: "
             android:textSize="20dp"
             android:textStyle="bold"
+            android:textColor="@color/black"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp">
         </TextView>
@@ -43,11 +44,53 @@
             android:layout_width="200dp"
             android:layout_height="40dp"
             android:layout_marginTop="12dp"
-            android:hint="Nhập 1 số nguyên"
-            android:textStyle="bold"
-            
-
-
+            android:hint="     Nhập 1 số nguyên"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+        </EditText>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:background="#CCC8C5"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="  Số thứ hai: "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp">
+        </TextView>
+        <EditText
+            android:id="@+id/edt2"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:hint="     Nhập 1 số nguyên"
+            android:textColor="@color/black"
+            android:textStyle="bold">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#CCC8C5"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="+"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:backgroundTint="#3BA215"
+    </LinearLayout>
+
+
 
 </LinearLayout>
