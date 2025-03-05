@@ -36,6 +36,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Xử lý code
+                //lay du lieu tu edittext
+                String s1 = edt1.getText().toString();
+                String s2 = edt2.getText().toString();
+                float a = Float.parseFloat(s1);
+                float b = Float.parseFloat(s2);
+                //tinh toan
+                float kq = a + b ;
+                //hien thi ket qua
+                //chuyển đổi từ float sang string
+                String ketqua = String.valueOf(kq);
+                edtKQ.setText(ketqua);
             }
         };
         btnCong.setOnClickListener(boLangNgheCong);
@@ -44,20 +55,61 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Xử lý code
+                //Cách viết hàm riêng để gọn code.
+                XULU_TRU();
             }
-        };
+        });
         btnNhan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Xử lý code
+                //lay du lieu tu edittext
+                String s1 = edt1.getText().toString();
+                String s2 = edt2.getText().toString();
+                float a = Float.parseFloat(s1);
+                float b = Float.parseFloat(s2);
+                //tinh toan
+                float kq = a * b ;
+                //hien thi ket qua
+                //chuyển đổi từ float sang string
+                String ketqua = String.valueOf(kq);
+                edtKQ.setText(ketqua);
             }
-        };
+        });
         btnChia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Xử lý code
+                //xử lý code
+                //lay du lieu tu edittext
+                String s1 = edt1.getText().toString();
+                String s2 = edt2.getText().toString();
+                float a = Float.parseFloat(s1);
+                float b = Float.parseFloat(s2);
+                //tinh toan
+                if(b == 0){
+                    edtKQ.setText("Không thể chia cho 0");
+                    return;
+                }
+                float kq = a / b ;
+                //hien thi ket qua
+                //chuyển đổi từ float sang string
+                String ketqua = String.valueOf(kq);
+                edtKQ.setText(ketqua);
             }
-        };
+        });
 
     };
+    void XULU_TRU(){
+        //lay du lieu tu edittext
+        String s1 = edt1.getText().toString();
+        String s2 = edt2.getText().toString();
+        float a = Float.parseFloat(s1);
+        float b = Float.parseFloat(s2);
+        //tinh toan
+        float kq = a - b ;
+        //hien thi ket qua
+        //chuyển đổi từ float sang string
+        String ketqua = String.valueOf(kq);
+        edtKQ.setText(ketqua);
+    }
 }
