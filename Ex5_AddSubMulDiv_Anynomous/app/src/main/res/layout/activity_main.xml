@@ -91,7 +91,6 @@
 
         <Button
             android:id="@+id/btnCong"
-            android:onClick="XuLyCong"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginLeft="10dp"
@@ -106,7 +105,6 @@
         </Button>
         <Button
             android:id="@+id/btnTru"
-            android:onClick="XuLyTru"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginLeft="10dp"
@@ -120,7 +118,6 @@
         </Button>
         <Button
             android:id="@+id/btnNhan"
-            android:onClick="XuLyNhan"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginLeft="10dp"
@@ -134,7 +131,6 @@
         </Button>
         <Button
             android:id="@+id/btnChia"
-            android:onClick="XuLyChia"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginLeft="10dp"
