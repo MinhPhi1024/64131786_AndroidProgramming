@@ -37,7 +37,7 @@
             android:layout_height="25dp"
             android:text="Hình tròn"
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="30dp"
             android:checked="true"/>
         <RadioButton
             android:id="@+id/rbHinhVuong"
@@ -51,7 +51,7 @@
             android:id="@+id/rbHinhChuNhat"
             android:layout_width="wrap_content"
             android:layout_height="25dp"
-            android:text="Hình Hinh Chữ Nhật"
+            android:text="Hình Chữ Nhật"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="15dp"
             android:checked="true"/>
@@ -60,16 +60,18 @@
         android:layout_width="370dp"
         android:layout_height="50dp"
         android:background="#4FC3F7"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nhập chiều dài:"
+            android:text="   Chiều dài:"
             android:textSize="20dp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:layout_gravity="center"
-            android:layout_marginLeft="10dp">
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp">
         </TextView>
         <EditText
             android:id="@+id/edtChieuDai"
@@ -80,11 +82,83 @@
             android:gravity="center"
             android:textSize="19dp"
             android:textStyle="bold"
-            android:textColorHint="@color/black"
-
-
-
+            android:textColorHint="@color/black">
+        </EditText>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:background="#4FC3F7"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chiều rộng:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="19dp">
+        </TextView>
+        <EditText
+            android:id="@+id/edtChieuRong"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:hint="Nhập chiều rộng"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:textColorHint="@color/black">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:background="#4FC3F7"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="17dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Tính toán"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:backgroundTint="#1BBD39"
+            android:layout_gravity="center"
+            android:layout_marginLeft="100dp"
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="#4FC3F7"
+        android:layout_marginLeft="35dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chu vi:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="19dp">
+        </TextView>
+        <EditText
+            android:id="@+id/edtChuVi"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:textColorHint="@color/black">
+        </EditText>
+    </LinearLayout>
+
 
 
 
