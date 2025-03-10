@@ -48,7 +48,6 @@ public class ActivityLogin extends AppCompatActivity {
                     iQuiz.putExtra("Email", Email);
                     //Gửi đi
                     startActivity(iQuiz);
-
                 }
                 else{
                     //Thông báo lỗi

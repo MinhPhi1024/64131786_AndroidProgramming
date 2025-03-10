@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent iLogin = new Intent(MainActivity.this, ActivityLogin.class);
                 startActivity(iLogin);
                 //gửi
-                startActivity(iLogin);
             }
         });
     }
