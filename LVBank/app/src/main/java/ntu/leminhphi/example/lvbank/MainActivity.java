@@ -1,7 +1,11 @@
 package ntu.leminhphi.example.lvbank;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,6 +40,20 @@ public class MainActivity extends AppCompatActivity {
         dsNganHang.add("SHB");
         dsNganHang.add("HDBank");
         //B2.tạo adapter
-        
+        ArrayAdapter<String> adapterBank;
+        adapterBank = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,dsNganHang);
+        //B3.gán adapter cho listview
+        listViewBank.setAdapter(adapterBank);
+        //B4. Gắn bộ lắng nghe
+        listViewBank.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //code xử lý khi click vào item
+                //chú ý: biến position lưu vị trí của item trong listview
+                String bankName = dsNganHang.get(position);
+                //Ví dụ đơn gian
+                Toast.makeText(MainActivity.this,bankName, Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }
