@@ -23,8 +23,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
         listViewBank = findViewById(R.id.ListBank);
         //B1.chuẩn bị dữ liệu
         dsNganHang = new ArrayList<String>();
