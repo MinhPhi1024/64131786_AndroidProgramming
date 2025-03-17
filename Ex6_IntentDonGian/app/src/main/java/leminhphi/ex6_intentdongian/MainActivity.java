@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
     Button NutMH2, NutMH3;
     void TimDieuKhien(){
 
-        Button NutMH2 = (Button) findViewById(R.id.btn1);
-        Button NutMH3 = (Button) findViewById(R.id.btn2);
+        NutMH2 = (Button) findViewById(R.id.btn1);
+        NutMH3 = (Button) findViewById(R.id.btn2);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Xử lý chuyển màn hình
                 //Bước 1: Tạo 1 intent 2 tham số 1.Mh hiện tại, 2. Mh chuyển đến
-                Intent intentMH3 = new Intent(MainActivity.this, MH2Activity.class);
+                Intent intentMH3 = new Intent(MainActivity.this, MH3Activity.class);
                 //Bước 2: Gửi
                 startActivity(intentMH3);
             }

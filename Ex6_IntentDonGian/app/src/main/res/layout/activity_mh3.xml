@@ -18,10 +18,4 @@
         android:layout_marginBottom="50dp"
         android:textColor="#092ED7"/>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="111dp"
-        app:srcCompat="@android:drawable/presence_busy"
-        tools:srcCompat="@tools:sample/avatars" />
 </LinearLayout>
