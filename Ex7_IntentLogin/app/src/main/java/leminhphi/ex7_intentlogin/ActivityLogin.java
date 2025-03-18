@@ -18,10 +18,10 @@ public class ActivityLogin extends AppCompatActivity {
     EditText edtDN, edtMK, edtEmail;
     Button btnXacNhan;
     void TimDieuKhien(){
-        EditText edtDN = (EditText) findViewById(R.id.edtUsername);
-        EditText edtMK = (EditText) findViewById(R.id.edtPassword);
-        EditText edtEmail = (EditText) findViewById(R.id.edtUserEmail);
-        Button btnXacNhan = (Button) findViewById(R.id.btnLogin);
+        edtDN = (EditText) findViewById(R.id.edtUsername);
+        edtMK = (EditText) findViewById(R.id.edtPassword);
+        edtEmail = (EditText) findViewById(R.id.edtUserEmail);
+        btnXacNhan = (Button) findViewById(R.id.btnLogin);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
