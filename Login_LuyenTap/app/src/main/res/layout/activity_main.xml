@@ -6,14 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#BDBCBC"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/secondaryVariant"
         android:textColor="@color/surface"
-        android:text="MÁY TÍNH CƠ BẢN"
+        android:text="HỆ THỐNG QUẢN LÝ"
         android:textSize="30dp"
         android:layout_marginBottom="120dp"
         android:textStyle="bold"
@@ -56,8 +56,34 @@
                 android:drawableLeft="@drawable/ic_baseline_person_24"
                 android:drawablePadding="8dp"
                 android:padding="8dp"
+                android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/cart"
+                android:hint="Password"
+                android:textColor="@color/primaryVariant"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:layout_marginTop="20dp"/>
 
-
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:background="@drawable/cart"
+                android:backgroundTint="@color/primaryVariant"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Login"
+                android:textColor="@color/surface"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
 
         </LinearLayout>
 
