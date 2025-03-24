@@ -6,11 +6,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#BDBCBC"
     tools:context=".MainActivity">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/surface"
+        android:background="@color/secondaryVariant"
+        android:textColor="@color/surface"
         android:text="MÁY TÍNH CƠ BẢN"
         android:textSize="30dp"
+        android:layout_marginBottom="120dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hienthi"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/cart">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/cart"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:text="LOGIN"
+                android:textColor="@color/primaryVariant"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/cart"
+                android:hint="Username"
+                android:textColor="@color/primaryVariant"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
 </LinearLayout>
