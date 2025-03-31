@@ -14,4 +14,5 @@
 
     <!-- Màu chữ -->
     <color name="textPrimary">#ffffff</color>
+    <color name="textSecondary">#000000</color>
 </resources>

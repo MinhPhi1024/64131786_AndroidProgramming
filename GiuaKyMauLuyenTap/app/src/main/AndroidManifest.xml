@@ -13,6 +13,9 @@
         android:theme="@style/Theme.GiuaKyMauLuyenTap"
         tools:targetApi="31">
         <activity
+            android:name=".Activity_cau3"
+            android:exported="false" />
+        <activity
             android:name=".Activity_cau2"
             android:exported="false" />
         <activity
@@ -28,9 +31,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity_cau3"
-            android:exported="false" />
-        <activity
             android:name=".Activity_cau1"
             android:exported="false" />
         <activity
@@ -42,6 +42,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

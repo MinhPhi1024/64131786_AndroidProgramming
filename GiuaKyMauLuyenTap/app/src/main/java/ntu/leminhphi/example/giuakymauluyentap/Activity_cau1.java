@@ -1,6 +1,7 @@
 package ntu.leminhphi.example.giuakymauluyentap;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -25,6 +26,11 @@ public class Activity_cau1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cau1);
         Timkiem();
-
+    }
+    public void TinhTong(View view){
+        String a = edtSoa.getText().toString();
+        String b = edtSob.getText().toString();
+        int tong = Integer.parseInt(a) + Integer.parseInt(b);
+        edtkq.setText(String.valueOf(tong));
     }
 }

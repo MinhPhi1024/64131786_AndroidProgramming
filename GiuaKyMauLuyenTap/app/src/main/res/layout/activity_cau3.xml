@@ -7,24 +7,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/bg"
-    tools:context=".Activity_cau2">
+    tools:context=".Activity_cau3">
     <TextView
-        android:layout_width="100dp"
+    android:layout_width="100dp"
+    android:layout_height="40dp"
+    android:text="CÂU 3"
+    android:textSize="25dp"
+    android:textColor="@color/textSecondary"
+    android:textStyle="bold"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/custom"
+    android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="350dp"
         android:layout_height="40dp"
-        android:text="CÂU 2"
-        android:textSize="25dp"
+        android:text="DANH SÁCH CÁC ĐỊA ĐIỂM DU LỊCH"
+        android:textSize="20dp"
         android:textColor="@color/textSecondary"
         android:textStyle="bold"
         android:layout_gravity="center"
         android:gravity="center"
         android:background="@drawable/custom"
         android:layout_marginTop="20dp"/>
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <ListView
-            android:id="@+id/lvBank"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-    </LinearLayout>
+        android:layout_height="match_parent"/>
 </LinearLayout>
