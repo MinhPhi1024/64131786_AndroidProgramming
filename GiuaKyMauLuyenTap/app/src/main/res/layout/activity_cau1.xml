@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".Activity_cau1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CÂU 1"
+        android:textSize="25dp"
+        android:textColor="@color/textPrimary"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số A:"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            android:textSize="30sp"
+            android:layout_marginLeft="50dp"/>
+        <EditText
+            android:id="@+id/edtSoa"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:background="@drawable/custom"
+            android:gravity="center"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số B:"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            android:textSize="30sp"
+            android:layout_marginLeft="50dp"/>
+        <EditText
+            android:id="@+id/edtSob"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:background="@drawable/custom"
+            android:gravity="center"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Tính tổng"
+        android:textSize="25dp"
+        android:textColor="@color/textPrimary"
+        android:background="@drawable/custom"
+        android:textStyle="bold"
+        android:id="@+id/btnTinhTong"
+        android:backgroundTint="@color/onPrimary"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kết quả:"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            android:textSize="30sp"
+            android:layout_marginLeft="50dp"/>
+        <EditText
+            android:id="@+id/edtkq"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:background="@drawable/custom"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

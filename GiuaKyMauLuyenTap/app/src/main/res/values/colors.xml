@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Màu chủ đạo -->
+    <color name="primary">#A8E6CF</color>
+    <color name="primaryVariant">#81C784</color>
+    <color name="onPrimary">#3FCA47</color>
+
+    <!-- Màu phụ -->
+    <color name="secondary">#FFAB91</color>
+
+    <!-- Màu nền -->
+    <color name="background">#FAFAFA</color>
+    <color name="surface">#C8E6C9</color>
+
+    <!-- Màu chữ -->
+    <color name="textPrimary">#ffffff</color>
+</resources>
