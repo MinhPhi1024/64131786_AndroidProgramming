@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+<!--Cách 1-->
 <!--    <fragment-->
 <!--        android:id="@+id/contentFragment"-->
 <!--        android:name="ntu.leminhphi.example.fragmentex_statically.ContentFragment"-->
@@ -28,6 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+<!--Cách 2-->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
         android:name="ntu.leminhphi.example.fragmentex_statically.ContentFragment"
