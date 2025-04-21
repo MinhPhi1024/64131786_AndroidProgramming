@@ -47,7 +47,7 @@ public class FooterFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 fragmentManager.beginTransaction()
-                        .replace(R.id.frameLayout, new Fragment1())
+                        .replace(R.id.frameLayout, new Fragment2())
                         .commit();
             }
         });
@@ -55,7 +55,7 @@ public class FooterFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 fragmentManager.beginTransaction()
-                        .replace(R.id.frameLayout, new Fragment1())
+                        .replace(R.id.frameLayout, new Fragment3())
                         .commit();
             }
         });
