@@ -3,6 +3,10 @@
         android:id="@+id/action_settings"
         android:title="Cài đặt"
         android:icon="@drawable/ic_base_line_gear_24dp" />
+    <item
+        android:id="@+id/action_share"
+        android:title="Chia sẻ"
+        android:icon="@android:drawable/ic_menu_share" />
 
     <item
         android:id="@+id/action_about"
@@ -13,4 +17,6 @@
         android:id="@+id/action_exit"
         android:title="Thoát"
         android:icon="@android:drawable/ic_lock_power_off" />
+
+
 </menu>
