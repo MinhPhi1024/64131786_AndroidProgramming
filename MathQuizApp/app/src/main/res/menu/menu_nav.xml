@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_settings"
+        android:title="Cài đặt"
+        android:icon="@drawable/ic_base_line_gear_24dp" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="Giới thiệu ứng dụng"
+        android:icon="@android:drawable/ic_menu_info_details" />
+
+    <item
+        android:id="@+id/action_exit"
+        android:title="Thoát"
+        android:icon="@android:drawable/ic_lock_power_off" />
+</menu>

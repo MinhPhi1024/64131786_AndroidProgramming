@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "599387456100",
+    "project_id": "math-quiz-app-159da",
+    "storage_bucket": "math-quiz-app-159da.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599387456100:android:42b6b209f551281dd91571",
+        "android_client_info": {
+          "package_name": "ntu.leminhphi.example.mathquizapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeijYt0JCGpdhzDVNd_QcLpPCfsCQcovY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
