@@ -64,12 +64,18 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra(Intent.EXTRA_TEXT, shareBody);
                     startActivity(intent);
                     drawerLayout.closeDrawer(GravityCompat.START);
+                } else if (item.getItemId() == R.id.action_settings) {
+                    Intent intent = new Intent(MainActivity.this, SettingActivity.class);
+                    startActivity(intent);
+                    drawerLayout.closeDrawer(GravityCompat.START);
+                } else if (item.getItemId() == R.id.action_about) {
+                    Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+                    startActivity(intent);
+                    drawerLayout.closeDrawer(GravityCompat.START);
+                } else if (item.getItemId() == R.id.action_exit) {
+                    finishAffinity();
+
                 }
-//                } else if (item.getItemId() == R.id.action_settings) {
-//                    Intent intent = new Intent(MainActivity.this, SettingActivity.class);
-//                    startActivity(intent);
-//                    drawerLayout.closeDrawer(GravityCompat.START);
-//                }
                 return false;
             }
         });

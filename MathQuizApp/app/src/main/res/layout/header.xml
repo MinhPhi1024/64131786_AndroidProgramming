@@ -14,7 +14,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/logo_mathquiz" />
+        android:background="@drawable/logo_mathquiz" />
 
     <TextView
         android:id="@+id/textView"
