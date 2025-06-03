@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.ntu.leminhphi.example.mathquizapp" />
+                  <option name="mobileSdkAppId" value="1:431727510919:android:b0954a7f11c6f8d54fff22" />
+                  <option name="projectId" value="math-quiz-app-864f7" />
+                  <option name="projectNumber" value="431727510919" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
