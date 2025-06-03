@@ -63,16 +63,16 @@ public class SignUp extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
         TimKiem();
 
-        if(mAuth.getCurrentUser() != null){
-            startActivity(new Intent(SignUp.this, MainActivity.class));
-            finishAffinity();
-        }
+//        if(mAuth.getCurrentUser() != null){
+//            startActivity(new Intent(SignUp.this, MainActivity.class));
+//            finish();
+//        }
 
         tvDangnhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(SignUp.this, Login.class));
-                finish();
+
             }
         });
 

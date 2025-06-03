@@ -19,6 +19,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.ntu.leminhphi.example.mathquizapp.databinding.ActivityLoginBinding;
 
 public class Login extends AppCompatActivity {
 
@@ -29,6 +30,7 @@ public class Login extends AppCompatActivity {
     FirebaseAuth mAuth;
     FirebaseFirestore mstore;
 
+    ActivityLoginBinding binding;
     public void TimKiem()
     {
         edtemail = (EditText) findViewById(R.id.edtemail);
@@ -43,8 +45,8 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_login);
+        binding = ActivityLoginBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
         TimKiem();
 
         tvDangky.setOnClickListener(new View.OnClickListener() {
@@ -52,7 +54,6 @@ public class Login extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Login.this, SignUp.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -63,7 +64,7 @@ public class Login extends AppCompatActivity {
                 String mPassword = edtpassword.getText().toString();
 
                 if(mEmail.equals("admin") && mPassword.equals("admin")){
-                    startActivity(new Intent(Login.this, MainActivity.class));
+                    startActivity(new Intent(Login.this, Admin.class));
                     finish();
                 }
                 if(TextUtils.isEmpty(mEmail)){
@@ -84,7 +85,7 @@ public class Login extends AppCompatActivity {
                         if(task.isSuccessful()){
                             Toast.makeText(Login.this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(Login.this, MainActivity.class));
-                            finishAffinity();
+                            finish();
                         }else{
                             Toast.makeText(Login.this, "Email hoặc mật khẩu không đúng", Toast.LENGTH_SHORT).show();
                             progressLogin.setVisibility(View.GONE);

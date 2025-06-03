@@ -9,7 +9,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.ntu.leminhphi.example.mathquizapp.Models_Admin.DoiTuongModels;
+import com.ntu.leminhphi.example.mathquizapp.MainActivity;
+
+import com.ntu.leminhphi.example.mathquizapp.Models_User.DoiTuongModels;
 import com.ntu.leminhphi.example.mathquizapp.R;
 import com.ntu.leminhphi.example.mathquizapp.User_Sub;
 import com.ntu.leminhphi.example.mathquizapp.databinding.RvDoituongDesignBinding;
@@ -21,6 +23,7 @@ public class DoiTuongAdapters extends RecyclerView.Adapter<DoiTuongAdapters.view
 
     Context context;
     ArrayList<DoiTuongModels> list;
+
     public DoiTuongAdapters(Context context, ArrayList<DoiTuongModels> models) {
         this.context = context;
         this.list = models;
@@ -29,8 +32,9 @@ public class DoiTuongAdapters extends RecyclerView.Adapter<DoiTuongAdapters.view
     @NonNull
     @Override
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.rv_doituong_design,parent,false);
-        return new viewHolder(view);
+        RvDoituongDesignBinding binding = RvDoituongDesignBinding.inflate(
+                LayoutInflater.from(parent.getContext()), parent, false);
+        return new viewHolder(binding);
     }
 
     @Override
@@ -46,11 +50,11 @@ public class DoiTuongAdapters extends RecyclerView.Adapter<DoiTuongAdapters.view
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, User_Sub.class);
-                intent.putExtra("tenlopID",model.getKey());
+                intent.putExtra("tenlopID", model.getKey());
+                intent.putExtra("baihoc", model.getTenlop());
                 context.startActivity(intent);
             }
         });
-
     }
 
     @Override
@@ -59,13 +63,12 @@ public class DoiTuongAdapters extends RecyclerView.Adapter<DoiTuongAdapters.view
     }
 
     public class viewHolder extends RecyclerView.ViewHolder {
-
         RvDoituongDesignBinding binding;
-        public viewHolder(@NonNull View itemView){
-            super(itemView);
 
-            binding = RvDoituongDesignBinding.bind(itemView);
-
+        public viewHolder(@NonNull RvDoituongDesignBinding binding) {
+            super(binding.getRoot());
+            this.binding = binding;
         }
     }
 }
+

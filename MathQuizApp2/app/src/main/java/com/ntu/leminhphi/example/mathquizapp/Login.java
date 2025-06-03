@@ -63,7 +63,7 @@ public class Login extends AppCompatActivity {
                 String mPassword = edtpassword.getText().toString();
 
                 if(mEmail.equals("admin") && mPassword.equals("admin")){
-                    startActivity(new Intent(Login.this, MainActivity.class));
+                    startActivity(new Intent(Login.this, Admin.class));
                     finish();
                 }
                 if(TextUtils.isEmpty(mEmail)){

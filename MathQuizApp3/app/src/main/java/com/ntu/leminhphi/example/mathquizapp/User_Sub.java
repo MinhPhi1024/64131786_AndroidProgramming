@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -15,8 +16,9 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
-import com.ntu.leminhphi.example.mathquizapp.Adapters_Admin.SubDoiTuongAdapters;
-import com.ntu.leminhphi.example.mathquizapp.Models_Admin.SubDoiTuongModels;
+
+import com.ntu.leminhphi.example.mathquizapp.Adapter_User.SubDoiTuongAdapters;
+import com.ntu.leminhphi.example.mathquizapp.Models_User.SubDoiTuongModels;
 import com.ntu.leminhphi.example.mathquizapp.databinding.ActivityAdminSubBinding;
 
 import java.util.ArrayList;
@@ -29,8 +31,9 @@ public class User_Sub extends AppCompatActivity {
     SubDoiTuongAdapters adapters;
     ArrayList<SubDoiTuongModels> list;
     Dialog loadingdialog;
+    ImageView imgback;
 
-    private String doituongID;
+    private String doituongID, tendoituong;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +44,12 @@ public class User_Sub extends AppCompatActivity {
         datebase = FirebaseDatabase.getInstance();
         storage = FirebaseStorage.getInstance();
         doituongID = getIntent().getStringExtra("tenlopID");
+        tendoituong = getIntent().getStringExtra("baihoc");
+
+        binding.tvAdmin.setText(tendoituong);
+
+        imgback = (ImageView)findViewById(R.id.imgback);
+
 
         list = new ArrayList<>();
 
@@ -80,14 +89,13 @@ public class User_Sub extends AppCompatActivity {
             }
         });
 
-
-        binding.fbtnThem.setOnClickListener(new View.OnClickListener() {
+        imgback.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(User_Sub.this, Admin_ThemSub.class);
-                intent.putExtra("tenlopID",doituongID);
-                startActivity(intent);
+            public void onClick(View v) {
+
+                onBackPressed();
             }
         });
+
     }
 }

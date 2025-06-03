@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.ntu.leminhphi.example.mathquizapp.Models_Admin.SubDoiTuongModels;
 import com.ntu.leminhphi.example.mathquizapp.R;
 import com.ntu.leminhphi.example.mathquizapp.User_Questions;
+import com.ntu.leminhphi.example.mathquizapp.User_Sub;
 import com.ntu.leminhphi.example.mathquizapp.databinding.RvSubdoituongDesignBinding;
 
 import java.util.ArrayList;
@@ -29,6 +30,9 @@ public class SubDoiTuongAdapters extends RecyclerView.Adapter<SubDoiTuongAdapter
         this.tenlopID = tenlopID;
         this.list = list;
         this.context = context;
+    }
+
+    public SubDoiTuongAdapters(String doituongID, ArrayList<com.ntu.leminhphi.example.mathquizapp.Models_User.SubDoiTuongModels> list, User_Sub context) {
     }
 
     @NonNull
