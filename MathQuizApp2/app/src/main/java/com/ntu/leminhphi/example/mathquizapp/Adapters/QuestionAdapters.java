@@ -23,7 +23,7 @@ public class QuestionAdapters extends RecyclerView.Adapter<QuestionAdapters.view
     private String tenlopID;
     private String themdoituongID;
 
-    public QuestionAdapters(Context context, ArrayList<DoiTuongModels> list, String tenlopID, String themdoituongID) {
+    public QuestionAdapters(Context context, ArrayList<QuestionModels> list, String tenlopID, String themdoituongID) {
         this.context = context;
         this.list = list;
         this.tenlopID = tenlopID;
