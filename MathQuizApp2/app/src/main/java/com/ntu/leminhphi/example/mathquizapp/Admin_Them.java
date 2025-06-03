@@ -29,7 +29,6 @@ import java.util.Date;
 public class Admin_Them extends AppCompatActivity {
 
     ActivityAdminThemBinding binding;
-
     FirebaseDatabase datebase;
     FirebaseStorage storage;
     Dialog loadingdialog;

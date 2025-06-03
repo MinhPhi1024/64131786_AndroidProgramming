@@ -1,6 +1,7 @@
 package com.ntu.leminhphi.example.mathquizapp.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.ntu.leminhphi.example.mathquizapp.Admin_Sub;
 import com.ntu.leminhphi.example.mathquizapp.Models.DoiTuongModels;
 import com.ntu.leminhphi.example.mathquizapp.R;
 import com.ntu.leminhphi.example.mathquizapp.databinding.RvDoituongDesignBinding;
@@ -39,6 +41,15 @@ public class DoiTuongAdapters extends RecyclerView.Adapter<DoiTuongAdapters.view
                 .load(model.getHinh())
                 .placeholder(R.drawable.logo_mathquiz)
                 .into(holder.binding.imgCar);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, Admin_Sub.class);
+                intent.putExtra("tenlopID",model.getKey());
+                context.startActivity(intent);
+            }
+        });
 
     }
 
