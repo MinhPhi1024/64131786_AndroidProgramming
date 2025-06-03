@@ -9,6 +9,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
@@ -25,7 +26,6 @@ import java.util.ArrayList;
 public class Admin_Questions extends AppCompatActivity {
 
     ActivityAdminQuestionsBinding binding;
-    FloatingActionButton fbtnThem;
     FirebaseDatabase datebase;
     FirebaseStorage storage;
     QuestionAdapters adapters;
@@ -52,8 +52,8 @@ public class Admin_Questions extends AppCompatActivity {
         loadingdialog.setCancelable(true);
         loadingdialog.show();
 
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2);
-        binding.rvQuestion.setLayoutManager(gridLayoutManager);
+        LinearLayoutManager LayoutManager = new LinearLayoutManager (this);
+        binding.rvQuestion.setLayoutManager(LayoutManager);
         adapters = new QuestionAdapters(this,list,tenlopID,themdoituongID);
         binding.rvQuestion.setAdapter(adapters);
 
@@ -65,7 +65,7 @@ public class Admin_Questions extends AppCompatActivity {
                     list.clear();
                     for(DataSnapshot dataSnapshot : snapshot.getChildren()) {
                         QuestionModels models = dataSnapshot.getValue(QuestionModels.class);
-                        models.setQuestion(dataSnapshot.getKey());
+                        models.setKey(dataSnapshot.getKey());
                         list.add(models);
                     }
                     adapters.notifyDataSetChanged();
@@ -84,8 +84,7 @@ public class Admin_Questions extends AppCompatActivity {
             }
         });
 
-        fbtnThem = (FloatingActionButton)findViewById(R.id.fbtnThem);
-        fbtnThem.setOnClickListener(new View.OnClickListener() {
+        binding.fbtnThem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin_Questions.this, Admin_ThemQuestions.class);

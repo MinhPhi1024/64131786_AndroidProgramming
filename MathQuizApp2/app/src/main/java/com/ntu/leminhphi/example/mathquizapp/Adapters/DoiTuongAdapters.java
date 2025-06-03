@@ -1,14 +1,18 @@
 package com.ntu.leminhphi.example.mathquizapp.Adapters;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.FirebaseDatabase;
 import com.ntu.leminhphi.example.mathquizapp.Admin_Sub;
 import com.ntu.leminhphi.example.mathquizapp.Models.DoiTuongModels;
 import com.ntu.leminhphi.example.mathquizapp.R;
@@ -50,6 +54,38 @@ public class DoiTuongAdapters extends RecyclerView.Adapter<DoiTuongAdapters.view
                 context.startActivity(intent);
             }
         });
+
+        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                builder.setTitle("Xác nhận xóa");
+                builder.setMessage("Bạn có chắc chắn muốn xóa?");
+
+                builder.setPositiveButton("Có", (dialogInterface, i) -> {
+                    FirebaseDatabase.getInstance().getReference().child("tenlop")
+                            .child(model.getKey())
+                            .removeValue()
+                            .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void unused) {
+                                    Toast.makeText(context, "Xóa thành công", Toast.LENGTH_SHORT).show();
+                                }
+                            });
+                });
+
+                builder.setNegativeButton("Không", (dialogInterface, i) -> {
+                    dialogInterface.cancel();
+                });
+
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
+
+                return false;
+            }
+        });
+
 
     }
 
