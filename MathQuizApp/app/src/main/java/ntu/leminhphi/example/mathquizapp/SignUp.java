@@ -1,5 +1,6 @@
 package ntu.leminhphi.example.mathquizapp;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -41,6 +42,7 @@ public class SignUp extends AppCompatActivity {
     ProgressBar progressLogin;
     FirebaseAuth mAuth;
     FirebaseFirestore mstore;
+    Dialog loadingdialog;
 
     public void TimKiem()
     {
@@ -54,6 +56,9 @@ public class SignUp extends AppCompatActivity {
         progressLogin = (ProgressBar) findViewById(R.id.progressLogin);
         mAuth = FirebaseAuth.getInstance();
         mstore = FirebaseFirestore.getInstance();
+        loadingdialog = new Dialog(this);
+        loadingdialog.setContentView(R.layout.loading_dialog);
+        loadingdialog.setCancelable(false);
 
     }
     @Override
@@ -116,8 +121,8 @@ public class SignUp extends AppCompatActivity {
                     edtpassAgain.setError("Mật khẩu không trùng khớp");
                     return;
                 }
-
-                progressLogin.setVisibility(View.VISIBLE);
+                loadingdialog.show();
+                //progressLogin.setVisibility(View.VISIBLE);
 
                 mAuth.createUserWithEmailAndPassword(mEmail,mPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
@@ -128,6 +133,7 @@ public class SignUp extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(Void unused) {
                                     Toast.makeText(SignUp.this, "Đăng ký thành công", Toast.LENGTH_SHORT).show();
+                                    loadingdialog.dismiss();
                                 }
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
@@ -159,6 +165,7 @@ public class SignUp extends AppCompatActivity {
 
                         }else{
                             Toast.makeText(SignUp.this, "Đăng ký thất bại", Toast.LENGTH_SHORT).show();
+                            loadingdialog.dismiss();
                         }
                     }
                 });

@@ -56,6 +56,7 @@
                         android:hint="Tên đăng nhập"
                         android:padding="10dp"
                         android:textSize="20dp"
+                        android:singleLine="true"
                         android:textStyle="bold" />
 
                     <EditText
@@ -69,6 +70,7 @@
                         android:hint="Nhập email"
                         android:padding="10dp"
                         android:textSize="20dp"
+                        android:singleLine="true"
                         android:textStyle="bold" />
 
                     <EditText
@@ -82,6 +84,7 @@
                         android:hint="Nhập số điện thoại"
                         android:padding="10dp"
                         android:textSize="20dp"
+                        android:singleLine="true"
                         android:textStyle="bold" />
 
                     <EditText
@@ -95,6 +98,7 @@
                         android:hint="Nhập mật khẩu"
                         android:padding="10dp"
                         android:textSize="20dp"
+                        android:singleLine="true"
                         android:textStyle="bold" />
 
 
@@ -109,6 +113,7 @@
                         android:hint="Nhập lại mật khẩu"
                         android:padding="10dp"
                         android:textSize="20dp"
+                        android:singleLine="true"
                         android:textStyle="bold" />
 
                     <Button
