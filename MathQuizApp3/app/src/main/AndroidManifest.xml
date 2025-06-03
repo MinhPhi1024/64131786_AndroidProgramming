@@ -13,7 +13,59 @@
         android:theme="@style/Theme.MathQuizApp"
         tools:targetApi="31">
         <activity
+            android:name=".AboutActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".Admin"
+            android:exported="false"/>
+
+        <activity
+            android:name=".Admin_Questions"
+            android:exported="false"/>
+
+        <activity
+            android:name=".Admin_Sub"
+            android:exported="false"/>
+
+        <activity
+            android:name=".Admin_Them"
+            android:exported="false"/>
+
+        <activity
+            android:name=".Admin_ThemQuestions"
+            android:exported="false"/>
+
+        <activity
+            android:name=".Admin_ThemSub"
+            android:exported="false"/>
+
+        <activity
+            android:name=".Login"
+            android:exported="false"/>
+
+        <activity
+            android:name=".SettingActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".SignUp"
+            android:exported="false"/>
+
+        <activity
             android:name=".MainActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".User_Sub"
+            android:exported="false"/>
+
+        <activity
+            android:name=".User_Questions"
+            android:exported="false"/>
+
+        <activity
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

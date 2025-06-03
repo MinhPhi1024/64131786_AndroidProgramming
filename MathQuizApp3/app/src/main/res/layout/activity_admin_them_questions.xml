@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccentBlue1"
+    tools:context=".Admin_ThemQuestions">
+
+    <EditText
+        android:id="@+id/edtQues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:hint="Nhập câu hỏi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtQues">
+
+        <RadioGroup
+            android:id="@+id/rgOption"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rbtnA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A." />
+
+            <RadioButton
+                android:id="@+id/rbtnB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B." />
+
+            <RadioButton
+                android:id="@+id/rbtnC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C." />
+
+            <RadioButton
+                android:id="@+id/rbtnD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D." />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/linAns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edtB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edtC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edtD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnthemQues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Thêm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

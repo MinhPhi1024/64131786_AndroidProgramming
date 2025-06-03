@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="240dp"
+    android:height="160dp"
+    android:viewportWidth="240"
+    android:viewportHeight="160">
+
+    <!-- Nền trong suốt -->
+    <path android:fillColor="@android:color/transparent" android:pathData="M0,0h240v160h-240z"/>
+
+    <!-- Trang bên trái -->
+    <path
+        android:pathData="M120,80
+            C85,45 30,35 30,110
+            L80,140
+            L120,140
+            Z"
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#222222"
+        android:strokeWidth="3"/>
+
+    <!-- Trang bên phải -->
+    <path
+        android:pathData="M120,80
+            C155,45 210,35 210,110
+            L160,140
+            L120,140
+            Z"
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#222222"
+        android:strokeWidth="3"/>
+
+    <!-- Gáy sách -->
+    <path
+        android:pathData="M115,80 L125,80 L125,140 L115,140 Z"
+        android:fillColor="#555555"/>
+
+    <!-- Các đường nét tượng trưng cho trang giấy bên trái -->
+    <path
+        android:pathData="M55,135
+            C80,110 110,100 120,90"
+        android:strokeColor="#BBBBBB"
+        android:strokeWidth="1"
+        android:fillColor="@android:color/transparent"/>
+
+    <path
+        android:pathData="M65,135
+            C90,115 110,105 120,95"
+        android:strokeColor="#BBBBBB"
+        android:strokeWidth="1"
+        android:fillColor="@android:color/transparent"/>
+
+    <!-- Các đường nét tượng trưng cho trang giấy bên phải -->
+    <path
+        android:pathData="M185,135
+            C160,110 130,100 120,90"
+        android:strokeColor="#BBBBBB"
+        android:strokeWidth="1"
+        android:fillColor="@android:color/transparent"/>
+
+    <path
+        android:pathData="M175,135
+            C150,115 130,105 120,95"
+        android:strokeColor="#BBBBBB"
+        android:strokeWidth="1"
+        android:fillColor="@android:color/transparent"/>
+</vector>

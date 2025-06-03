@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nền chính -->
+    <color name="colorBackground">#DCDCDC</color>
+
+    <!-- Màu chính và phụ -->
+    <color name="colorPrimary">#3B44F6</color>
+    <color name="colorPrimaryVariant">#5A5EF6</color>
+    <color name="colorSecondary">#FFD700</color>
+
+    <!-- Màu nổi bật (accent colors) -->
+    <color name="colorAccentPink">#EC407A</color>
+    <color name="colorAccentOrange">#EF7C59</color>
+    <color name="colorAccentBlue">#4285F4</color>
+    <color name="colorAccentCyan">#03A9F4</color>
+    <color name="colorAccentBlue1">#4DD0E1</color>
+    <color name="colorAccentPurple">#9C8CD0</color>
+    <color name="colorAccentLightPink">#F8BBD0</color>
+
+    <!-- Màu trung tính -->
+    <color name="colorDark">#444444</color>
+    <color name="colorLight">#F5F5F5</color>
+</resources>
