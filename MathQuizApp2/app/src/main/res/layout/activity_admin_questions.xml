@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorAccentBlue1"
     android:clickable="true"
-    tools:context=".Admin_Sub">
+    tools:context=".Admin_Questions">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -24,9 +24,9 @@
         android:id="@+id/tvAdmin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="BÀI HỌC"
+        android:text="CÂU HỎI"
         android:textColor="@color/cardview_light_background"
         android:textSize="24dp"
         android:textStyle="bold"
@@ -36,7 +36,7 @@
         app:layout_constraintTop_toTopOf="@+id/toolbar2" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvdoituong"
+        android:id="@+id/rvQuestion"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"

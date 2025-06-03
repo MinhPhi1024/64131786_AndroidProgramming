@@ -3,12 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/colorAccentBlue1">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:background="@drawable/custom_cardview"
         android:orientation="horizontal">
 
         <TextView
@@ -27,7 +29,7 @@
             android:layout_gravity="center"
             android:layout_marginRight="10dp"
             android:layout_weight="1"
-            tools:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+            android:background="@drawable/ic_baseline_arrow_forward_ios_24" />
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>

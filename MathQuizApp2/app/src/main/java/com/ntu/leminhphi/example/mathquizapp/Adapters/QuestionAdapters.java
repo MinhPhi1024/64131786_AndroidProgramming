@@ -1,7 +1,6 @@
 package com.ntu.leminhphi.example.mathquizapp.Adapters;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,29 +8,26 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.ntu.leminhphi.example.mathquizapp.Admin_Questions;
-import com.ntu.leminhphi.example.mathquizapp.Admin_Sub;
-import com.ntu.leminhphi.example.mathquizapp.Models.SubDoiTuongModels;
+import com.ntu.leminhphi.example.mathquizapp.Models.DoiTuongModels;
+import com.ntu.leminhphi.example.mathquizapp.Models.QuestionModels;
 import com.ntu.leminhphi.example.mathquizapp.R;
-import com.ntu.leminhphi.example.mathquizapp.databinding.RvDoituongDesignBinding;
 import com.ntu.leminhphi.example.mathquizapp.databinding.RvSubdoituongDesignBinding;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class SubDoiTuongAdapters extends RecyclerView.Adapter<SubDoiTuongAdapters.viewHolder>{
+public class QuestionAdapters extends RecyclerView.Adapter<QuestionAdapters.viewHolder>{
 
     Context context;
-    ArrayList<SubDoiTuongModels> list;
+    ArrayList<QuestionModels> list;
 
     private String tenlopID;
-
     private String themdoituongID;
 
-    public SubDoiTuongAdapters(String tenlopID, ArrayList<SubDoiTuongModels> list, Context context) {
-        this.tenlopID = tenlopID;
-        this.list = list;
+    public QuestionAdapters(Context context, ArrayList<DoiTuongModels> list, String tenlopID, String themdoituongID) {
         this.context = context;
+        this.list = list;
+        this.tenlopID = tenlopID;
+        this.themdoituongID = themdoituongID;
     }
 
     @NonNull
@@ -43,18 +39,8 @@ public class SubDoiTuongAdapters extends RecyclerView.Adapter<SubDoiTuongAdapter
 
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
-        SubDoiTuongModels model = list.get(position);
-        holder.binding.tvTenBai.setText(model.getTenlop());
-
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(context, Admin_Questions.class);
-                intent.putExtra("tenlopID",tenlopID);
-                intent.putExtra("tenlopID",model.getKey());
-                context.startActivity(intent);
-            }
-        });
+        QuestionModels model = list.get(position);
+        holder.binding.tvTenBai.setText(model.getQuestion());
 
     }
 

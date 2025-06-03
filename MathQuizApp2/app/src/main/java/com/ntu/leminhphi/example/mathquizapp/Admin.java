@@ -45,7 +45,6 @@ public class Admin extends AppCompatActivity {
         datebase = FirebaseDatabase.getInstance();
         storage = FirebaseStorage.getInstance();
         list = new ArrayList<>();
-        adapters = new DoiTuongAdapters(this,list);
 
         loadingdialog = new Dialog(this);
         loadingdialog.setContentView(R.layout.loading_dialog);
@@ -64,6 +63,7 @@ public class Admin extends AppCompatActivity {
                     list.clear();
                     for(DataSnapshot dataSnapshot : snapshot.getChildren()) {
                         DoiTuongModels doiTuongModels = dataSnapshot.getValue(DoiTuongModels.class);
+                        doiTuongModels.setKey(dataSnapshot.getKey());
                         list.add(doiTuongModels);
                     }
                     adapters.notifyDataSetChanged();

@@ -35,7 +35,7 @@ public class Admin_ThemSub extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         datebase = FirebaseDatabase.getInstance();
-        doituongID = getIntent().getStringExtra("doituongID");
+        doituongID = getIntent().getStringExtra("tenlopID");
 
         loadingdialog = new Dialog(this);
         loadingdialog.setContentView(R.layout.loading_dialog);
