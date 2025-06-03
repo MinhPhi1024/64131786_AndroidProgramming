@@ -21,7 +21,7 @@ import com.ntu.leminhphi.example.mathquizapp.databinding.ActivityAdminSubBinding
 
 import java.util.ArrayList;
 
-public class Admin_Sub extends AppCompatActivity {
+public class User_Sub extends AppCompatActivity {
 
     ActivityAdminSubBinding binding;
     FirebaseDatabase datebase;
@@ -69,14 +69,14 @@ public class Admin_Sub extends AppCompatActivity {
                 }
                 else{
                     loadingdialog.dismiss();
-                    Toast.makeText(Admin_Sub.this, "Không có dữ liệu", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(User_Sub.this, "Không có dữ liệu", Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 loadingdialog.dismiss();
-                Toast.makeText(Admin_Sub.this, error.getMessage().toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(User_Sub.this, error.getMessage().toString(), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -84,7 +84,7 @@ public class Admin_Sub extends AppCompatActivity {
         binding.fbtnThem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Admin_Sub.this, Admin_ThemSub.class);
+                Intent intent = new Intent(User_Sub.this, Admin_ThemSub.class);
                 intent.putExtra("tenlopID",doituongID);
                 startActivity(intent);
             }

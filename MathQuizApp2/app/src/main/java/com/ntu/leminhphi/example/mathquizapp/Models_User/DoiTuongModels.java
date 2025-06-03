@@ -1,4 +1,4 @@
-package com.ntu.leminhphi.example.mathquizapp.Models;
+package com.ntu.leminhphi.example.mathquizapp.Models_User;
 
 public class DoiTuongModels {
 

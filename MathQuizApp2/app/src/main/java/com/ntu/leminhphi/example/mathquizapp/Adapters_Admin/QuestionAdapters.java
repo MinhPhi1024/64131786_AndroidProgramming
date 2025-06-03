@@ -1,4 +1,4 @@
-package com.ntu.leminhphi.example.mathquizapp.Adapters;
+package com.ntu.leminhphi.example.mathquizapp.Adapters_Admin;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -12,8 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.FirebaseDatabase;
-import com.ntu.leminhphi.example.mathquizapp.Models.DoiTuongModels;
-import com.ntu.leminhphi.example.mathquizapp.Models.QuestionModels;
+import com.ntu.leminhphi.example.mathquizapp.Models_Admin.QuestionModels;
 import com.ntu.leminhphi.example.mathquizapp.R;
 import com.ntu.leminhphi.example.mathquizapp.databinding.RvSubdoituongDesignBinding;
 

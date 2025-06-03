@@ -8,17 +8,15 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
-import com.ntu.leminhphi.example.mathquizapp.Adapters.QuestionAdapters;
-import com.ntu.leminhphi.example.mathquizapp.Models.QuestionModels;
+import com.ntu.leminhphi.example.mathquizapp.Adapters_Admin.QuestionAdapters;
+import com.ntu.leminhphi.example.mathquizapp.Models_Admin.QuestionModels;
 import com.ntu.leminhphi.example.mathquizapp.databinding.ActivityAdminQuestionsBinding;
 
 import java.util.ArrayList;

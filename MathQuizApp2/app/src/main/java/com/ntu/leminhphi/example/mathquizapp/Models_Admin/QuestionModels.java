@@ -1,4 +1,4 @@
-package com.ntu.leminhphi.example.mathquizapp.Models;
+package com.ntu.leminhphi.example.mathquizapp.Models_Admin;
 
 public class QuestionModels {
     private String question, answer, edtA, edtB, edtC, edtD,key;

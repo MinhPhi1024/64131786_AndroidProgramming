@@ -5,18 +5,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
-import com.ntu.leminhphi.example.mathquizapp.Models.SubDoiTuongModels;
+import com.ntu.leminhphi.example.mathquizapp.Models_Admin.SubDoiTuongModels;
 import com.ntu.leminhphi.example.mathquizapp.databinding.ActivityAdminThemSubBinding;
 
 public class Admin_ThemSub extends AppCompatActivity {

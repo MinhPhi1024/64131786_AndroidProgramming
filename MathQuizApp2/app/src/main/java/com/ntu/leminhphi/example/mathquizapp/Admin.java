@@ -6,12 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -20,8 +16,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
-import com.ntu.leminhphi.example.mathquizapp.Adapters.DoiTuongAdapters;
-import com.ntu.leminhphi.example.mathquizapp.Models.DoiTuongModels;
+import com.ntu.leminhphi.example.mathquizapp.Adapters_Admin.DoiTuongAdapters;
+import com.ntu.leminhphi.example.mathquizapp.Models_Admin.DoiTuongModels;
 import com.ntu.leminhphi.example.mathquizapp.databinding.ActivityAdminBinding;
 
 import java.util.ArrayList;

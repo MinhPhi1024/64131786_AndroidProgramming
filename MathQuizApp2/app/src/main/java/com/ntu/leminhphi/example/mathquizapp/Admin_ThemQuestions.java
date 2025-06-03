@@ -9,18 +9,14 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
-import com.ntu.leminhphi.example.mathquizapp.Models.QuestionModels;
+import com.ntu.leminhphi.example.mathquizapp.Models_Admin.QuestionModels;
 import com.ntu.leminhphi.example.mathquizapp.databinding.ActivityAdminThemQuestionsBinding;
 
 public class Admin_ThemQuestions extends AppCompatActivity {
