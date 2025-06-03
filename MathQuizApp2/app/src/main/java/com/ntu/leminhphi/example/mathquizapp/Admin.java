@@ -40,7 +40,7 @@ public class Admin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityAdminBinding.inflate(getLayoutInflater());
-        setContentView(R.layout.activity_admin);
+        setContentView(binding.getRoot());
 
         datebase = FirebaseDatabase.getInstance();
         storage = FirebaseStorage.getInstance();
@@ -81,9 +81,6 @@ public class Admin extends AppCompatActivity {
                 Toast.makeText(Admin.this, error.getMessage().toString(), Toast.LENGTH_SHORT).show();
             }
         });
-
-
-
 
         fbtnThem = (FloatingActionButton)findViewById(R.id.fbtnThem);
         fbtnThem.setOnClickListener(new View.OnClickListener() {

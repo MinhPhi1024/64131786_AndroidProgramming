@@ -16,7 +16,7 @@
             android:name=".Admin_Them"
             android:exported="false" />
         <activity
-            android:name=".Admin"
+            android:name=".SplashScreen"
             android:exported="false" />
         <activity
             android:name=".AboutActivity"
@@ -34,7 +34,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".Admin"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
