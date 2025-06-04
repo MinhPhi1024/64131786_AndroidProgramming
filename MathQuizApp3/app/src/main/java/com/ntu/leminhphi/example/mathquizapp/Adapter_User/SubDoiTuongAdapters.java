@@ -9,7 +9,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.ntu.leminhphi.example.mathquizapp.Models_Admin.SubDoiTuongModels;
+
+import com.ntu.leminhphi.example.mathquizapp.Models_User.SubDoiTuongModels;
 import com.ntu.leminhphi.example.mathquizapp.R;
 import com.ntu.leminhphi.example.mathquizapp.User_Questions;
 import com.ntu.leminhphi.example.mathquizapp.User_Sub;
@@ -32,9 +33,6 @@ public class SubDoiTuongAdapters extends RecyclerView.Adapter<SubDoiTuongAdapter
         this.context = context;
     }
 
-    public SubDoiTuongAdapters(String doituongID, ArrayList<com.ntu.leminhphi.example.mathquizapp.Models_User.SubDoiTuongModels> list, User_Sub context) {
-    }
-
     @NonNull
     @Override
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -52,7 +50,7 @@ public class SubDoiTuongAdapters extends RecyclerView.Adapter<SubDoiTuongAdapter
             public void onClick(View view) {
                 Intent intent = new Intent(context, User_Questions.class);
                 intent.putExtra("tenlopID",tenlopID);
-                intent.putExtra("themdoituongID",model.getKey());
+                intent.putExtra("baihoc",model.getKey());
                 context.startActivity(intent);
             }
         });

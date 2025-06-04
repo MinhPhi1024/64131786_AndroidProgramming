@@ -49,10 +49,10 @@ public class DoiTuongAdapters extends RecyclerView.Adapter<DoiTuongAdapters.view
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, User_Sub.class);
-                intent.putExtra("tenlopID", model.getKey());
-                intent.putExtra("baihoc", model.getTenlop());
-                context.startActivity(intent);
+                    Intent intent = new Intent(context, User_Sub.class);
+                    intent.putExtra("tenlopID", model.getKey());
+                    intent.putExtra("baihoc", model.getTenlop());
+                    context.startActivity(intent);
             }
         });
     }

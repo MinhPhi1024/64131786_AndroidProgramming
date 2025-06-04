@@ -19,13 +19,13 @@ import com.google.firebase.storage.FirebaseStorage;
 
 import com.ntu.leminhphi.example.mathquizapp.Adapter_User.SubDoiTuongAdapters;
 import com.ntu.leminhphi.example.mathquizapp.Models_User.SubDoiTuongModels;
-import com.ntu.leminhphi.example.mathquizapp.databinding.ActivityAdminSubBinding;
+import com.ntu.leminhphi.example.mathquizapp.databinding.ActivityUserSubBinding;
 
 import java.util.ArrayList;
 
 public class User_Sub extends AppCompatActivity {
 
-    ActivityAdminSubBinding binding;
+    ActivityUserSubBinding binding;
     FirebaseDatabase datebase;
     FirebaseStorage storage;
     SubDoiTuongAdapters adapters;
@@ -38,7 +38,7 @@ public class User_Sub extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityAdminSubBinding.inflate(getLayoutInflater());
+        binding = ActivityUserSubBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         datebase = FirebaseDatabase.getInstance();
